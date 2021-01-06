@@ -55,7 +55,7 @@
                             </h2>
 
                         </a>
-                        <button id="say">Say hi!</button>
+                        <button id="say">Submit</button>
 
                         <hr>
                         <div id="result"></div>
@@ -66,7 +66,7 @@
                                 var lname = document.getElementById('last_name').value;
                                 var question = document.getElementById('question').value;
 
-                                var html = 'Hello <b>' + fname + '</b> ' + lname + ' we have submitted your following request: ' + question;
+                                var html = 'Hello <b>' + fname + " " + lname + '</b> we have submitted your following request: ' + question;
 
                                 document.getElementById('result').innerHTML = html;
                             }
