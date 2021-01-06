@@ -55,10 +55,19 @@
                             </h2>
 
                         </a>
-                        <button id="say">Submit</button>
+
+
+                        <button id="say" onclick="myFunction()">Submit</button>
 
                         <hr>
                         <div id="result"></div>
+
+                        <script>
+                            function myFunction() {
+                                document.getElementById("p1").innerHTML = "Page 7";
+                            }
+                        </script>
+
 
                         <script>
                             function say_hi() {
@@ -70,7 +79,6 @@
 
                                 document.getElementById('result').innerHTML = html;
                             }
-
                             document.getElementById('say').addEventListener('click', say_hi);
                         </script>
 
@@ -86,7 +94,7 @@
 
                     </div>
                 </div>
-                <h2>Page 6</h2>
+                <h2 id="p1">Page 6</h2>
                 <ul class="actions">
                     <li><a href="page6.html" class="button alt">Go to Page 5 <Menu></Menu></a></li>
                     <li><a href="page1.html" class="button alt">Main menu</a></li>
