@@ -40,24 +40,35 @@
 
                         <!-- <form action="test.php" method="post" id="users"> -->
                         <!-- <form action="mailto:guillaume.tuahivaateonohiti@gmail.com" method="post" id="users"> -->
-                        <form action="page8.html" method="post" id="users">
+
+                        First name: <input style="background-color: black;" id="first_name"> Last name: <input style="background-color: black;" id="last_name"> Question: <input style="background-color: black;" id="question">
+                        <button id="say">Say hi!</button>
+
+                        <hr>
+                        <div id="result"></div>
+
+                        <script>
+                            function say_hi() {
+                                var fname = document.getElementById('first_name').value;
+                                var lname = document.getElementById('last_name').value;
+                                var question = document.getElementById('question').value;
+
+                                var html = 'Hello <b>' + fname + '</b> ' + lname + ' we have submitted your following request: ' + question;
+
+                                document.getElementById('result').innerHTML = html;
+                            }
+
+                            document.getElementById('say').addEventListener('click', say_hi);
+                        </script>
+
+
+
+                        <!-- <form action="page8.html" method="post" id="users">
                             <label for="username">Enter your question below:</label>
                             <input type="text" name="username" id="Username" style="background-color: black;">
-                            <!-- <a href="page8.html" class="button alt">Submit</a> -->
-
-
-                            <button onclick="myFunction()">Try it</button>
-
-                            <script>
-                                function myFunction() {
-                                    alert("I am an alert box!");
-                                }
-                            </script>
-
-
-                            <!-- <input type="submit" value="Submit"> -->
+                            <a href="page8.html" class="button alt">Submit</a>
                             <input type="reset" value="Reset">
-                        </form>
+                        </form> -->
 
 
                     </div>
